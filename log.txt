@@ -1,0 +1,285 @@
+[00:00:00.255,432] <inf> app: Starting task, stride=1...
+[00:00:00.255,615] <dbg> app: my_entry_point: Spinning in user thread...
+[00:00:00.255,676] <dbg> app: main: Spinning in main thread...
+[00:00:02.257,171] <dbg> app: stack_overflow: Overflowing, &arr=0x20002510
+--- 82 messages dropped ---
+[00:00:02.257,202] <dbg> app: stack_overflow: Overflowing, &arr=0x20002508
+[00:00:02.257,232] <dbg> app: stack_overflow: Overflowing, &arr=0x20002500
+[00:00:02.257,232] <dbg> app: stack_overflow: Overflowing, &arr=0x200024f8
+[00:00:02.257,263] <dbg> app: stack_overflow: Overflowing, &arr=0x200024f0
+[00:00:02.257,263] <dbg> app: stack_overflow: Overflowing, &arr=0x200024e8
+[00:00:02.257,293] <dbg> app: stack_overflow: Overflowing, &arr=0x200024e0
+[00:00:02.257,324] <dbg> app: stack_overflow: Overflowing, &arr=0x200024d8
+[00:00:02.257,324] <dbg> app: stack_overflow: Overflowing, &arr=0x200024d0
+[00:00:02.257,354] <dbg> app: stack_overflow: Overflowing, &arr=0x200024c8
+[00:00:02.257,354] <dbg> app: stack_overflow: Overflowing, &arr=0x200024c0
+[00:00:01.255,676] <dbg> app: my_entry_point: Spinning in user thread...
+[00:00:02.257,385] <dbg> app: stack_overflow: Overflowing, &arr=0x200024b8
+[00:00:02.257,415] <dbg> app: stack_overflow: Overflowing, &arr=0x200024b0
+[00:00:02.257,415] <dbg> app: stack_overflow: Overflowing, &arr=0x200024a8
+[00:00:02.257,446] <dbg> app: stack_overflow: Overflowing, &arr=0x200024a0
+[00:00:02.257,446] <err> os: ***** MPU FAULT *****
+[00:00:02.257,476] <err> os:   Stacking error (context area might be not valid)
+[00:00:02.257,507] <err> os: r0/a1:  0x00000000  r1/a2:  0x0007eed9  r2/a3:  0x0000c1a8
+[00:00:02.257,507] <err> os: r3/a4:  0x00002100 r12/ip:  0x2000248c r14/lr:  0x00000000
+[00:00:02.257,537] <err> os:  xpsr:  0x61000000
+[00:00:02.257,568] <err> os: s[ 0]:  0x00000000  s[ 1]:  0x00000000  s[ 2]:  0x00000000  s[ 3]:  0x00000000
+[00:00:02.257,568] <err> os: s[ 4]:  0x00000000  s[ 5]:  0x00000000  s[ 6]:  0x00000000  s[ 7]:  0x00000000
+[00:00:02.257,598] <err> os: s[ 8]:  0x00000000  s[ 9]:  0x00000000  s[10]:  0x00000000  s[11]:  0x00000000
+[00:00:02.257,629] <err> os: s[12]:  0x00000000  s[13]:  0x00000000  s[14]:  0x00000000  s[15]:  0x00000000
+[00:00:02.257,629] <err> os: fpscr:  0x00000000
+[00:00:02.257,629] <err> os: Faulting instruction address (r15/pc): 0x00003809
+[00:00:02.257,690] <err> os: >>> ZEPHYR FATAL ERROR 2: Stack overflow on CPU 0
+[00:00:02.257,720] <err> os: Current thread: 0x20000000 (user_thread)
+[00:00:03.391,784] <err> app: k_sys_fatal_error_handler invoked.
+[00:00:03.423,583] <inf> app: Thread is normal
+[00:00:03.448,516] <wrn> app: Userspace thread; aborting it.
+[00:00:03.479,980] <inf> app: Starting task, stride=10...
+[00:00:03.511,077] <dbg> app: my_entry_point: Spinning in user thread...
+[00:00:03.548,339] <dbg> app: main: Spinning in main thread...
+[00:00:01.255,676] <dbg> app: my_entry_point: Spinning in user thread...
+[00:00:04.548,370] <dbg> app: my_entry_point: Spinning in user thread...
+[00:00:04.585,632] <dbg> app: main: Spinning in main thread...
+[00:00:05.585,662] <inf> app: Stackoverflowing...
+[00:00:05.610,870] <dbg> app: stack_overflow: Overflowing, &arr=0x20002788
+[00:00:05.648,315] <dbg> app: stack_overflow: Overflowing, &arr=0x20002778
+[00:00:05.685,699] <dbg> app: stack_overflow: Overflowing, &arr=0x20002768
+[00:00:05.723,114] <dbg> app: stack_overflow: Overflowing, &arr=0x20002758
+[00:00:05.760,528] <dbg> app: stack_overflow: Overflowing, &arr=0x20002748
+[00:00:05.797,943] <dbg> app: stack_overflow: Overflowing, &arr=0x20002738
+[00:00:05.835,357] <dbg> app: stack_overflow: Overflowing, &arr=0x20002728
+[00:00:05.872,772] <dbg> app: stack_overflow: Overflowing, &arr=0x20002718
+[00:00:05.910,186] <dbg> app: stack_overflow: Overflowing, &arr=0x20002708
+[00:00:05.947,601] <dbg> app: stack_overflow: Overflowing, &arr=0x200026f8
+[00:00:05.985,015] <dbg> app: stack_overflow: Overflowing, &arr=0x200026e8
+[00:00:06.022,399] <dbg> app: stack_overflow: Overflowing, &arr=0x200026d8
+[00:00:06.059,814] <dbg> app: stack_overflow: Overflowing, &arr=0x200026c8
+[00:00:06.097,198] <dbg> app: stack_overflow: Overflowing, &arr=0x200026b8
+[00:00:06.134,582] <dbg> app: stack_overflow: Overflowing, &arr=0x200026a8
+[00:00:06.171,997] <dbg> app: stack_overflow: Overflowing, &arr=0x20002698
+[00:00:06.209,381] <dbg> app: stack_overflow: Overflowing, &arr=0x20002688
+[00:00:06.246,795] <dbg> app: stack_overflow: Overflowing, &arr=0x20002678
+[00:00:06.284,179] <dbg> app: stack_overflow: Overflowing, &arr=0x20002668
+[00:00:06.321,594] <dbg> app: stack_overflow: Overflowing, &arr=0x20002658
+[00:00:06.359,039] <dbg> app: stack_overflow: Overflowing, &arr=0x20002648
+[00:00:06.396,453] <dbg> app: stack_overflow: Overflowing, &arr=0x20002638
+[00:00:06.433,868] <dbg> app: stack_overflow: Overflowing, &arr=0x20002628
+[00:00:06.471,282] <dbg> app: stack_overflow: Overflowing, &arr=0x20002618
+[00:00:06.508,697] <dbg> app: stack_overflow: Overflowing, &arr=0x20002608
+[00:00:06.546,112] <dbg> app: stack_overflow: Overflowing, &arr=0x200025f8
+[00:00:06.583,496] <dbg> app: stack_overflow: Overflowing, &arr=0x200025e8
+[00:00:06.620,880] <dbg> app: stack_overflow: Overflowing, &arr=0x200025d8
+[00:00:06.658,264] <dbg> app: stack_overflow: Overflowing, &arr=0x200025c8
+[00:00:06.695,678] <dbg> app: stack_overflow: Overflowing, &arr=0x200025b8
+[00:00:06.733,093] <dbg> app: stack_overflow: Overflowing, &arr=0x200025a8
+[00:00:06.770,477] <dbg> app: stack_overflow: Overflowing, &arr=0x20002598
+[00:00:06.807,861] <dbg> app: stack_overflow: Overflowing, &arr=0x20002588
+[00:00:06.845,245] <dbg> app: stack_overflow: Overflowing, &arr=0x20002578
+[00:00:06.882,629] <dbg> app: stack_overflow: Overflowing, &arr=0x20002568
+[00:00:06.920,043] <dbg> app: stack_overflow: Overflowing, &arr=0x20002558
+[00:00:06.957,458] <dbg> app: stack_overflow: Overflowing, &arr=0x20002548
+[00:00:06.994,873] <dbg> app: stack_overflow: Overflowing, &arr=0x20002538
+[00:00:07.032,257] <dbg> app: stack_overflow: Overflowing, &arr=0x20002528
+[00:00:07.069,671] <dbg> app: stack_overflow: Overflowing, &arr=0x20002518
+[00:00:07.107,086] <dbg> app: stack_overflow: Overflowing, &arr=0x20002508
+[00:00:07.144,470] <dbg> app: stack_overflow: Overflowing, &arr=0x200024f8
+[00:00:07.181,884] <dbg> app: stack_overflow: Overflowing, &arr=0x200024e8
+[00:00:07.219,268] <dbg> app: stack_overflow: Overflowing, &arr=0x200024d8
+[00:00:07.256,683] <dbg> app: stack_overflow: Overflowing, &arr=0x200024c8
+[00:00:07.294,067] <dbg> app: stack_overflow: Overflowing, &arr=0x200024b8
+[00:00:07.331,481] <dbg> app: stack_overflow: Overflowing, &arr=0x200024a8
+[00:00:07.368,896] <err> os: ***** MPU FAULT *****
+[00:00:07.394,439] <err> os:   Stacking error (context area might be not valid)
+[00:00:07.432,525] <err> os: r0/a1:  0x00000000  r1/a2:  0x0007eed9  r2/a3:  0x00000000
+[00:00:07.476,287] <err> os: r3/a4:  0x00000000 r12/ip:  0x0000c1a8 r14/lr:  0x00002100
+[00:00:07.520,080] <err> os:  xpsr:  0x61000000
+[00:00:07.545,379] <err> os: s[ 0]:  0x00000000  s[ 1]:  0x00000000  s[ 2]:  0x00000000  s[ 3]:  0x00000000
+[00:00:07.595,977] <err> os: s[ 4]:  0x00000000  s[ 5]:  0x00000000  s[ 6]:  0x00000000  s[ 7]:  0x00000000
+[00:00:07.646,575] <err> os: s[ 8]:  0x00000000  s[ 9]:  0x00000000  s[10]:  0x00000000  s[11]:  0x00000000
+[00:00:07.697,174] <err> os: s[12]:  0x00000000  s[13]:  0x00000000  s[14]:  0x00000000  s[15]:  0x00000000
+[00:00:07.747,772] <err> os: fpscr:  0x00000000
+[00:00:07.773,071] <err> os: Faulting instruction address (r15/pc): 0x00003809
+[00:00:07.811,096] <err> os: >>> ZEPHYR FATAL ERROR 2: Stack overflow on CPU 0
+[00:00:07.849,121] <err> os: Current thread: 0x20000000 (user_thread)
+[00:00:07.886,352] <err> app: k_sys_fatal_error_handler invoked.
+[00:00:07.918,121] <inf> app: Thread is normal
+[00:00:07.943,054] <wrn> app: Userspace thread; aborting it.
+[00:00:07.974,487] <inf> app: Starting task, stride=50...
+[00:00:08.005,554] <dbg> app: my_entry_point: Spinning in user thread...
+[00:00:08.042,755] <dbg> app: main: Spinning in main thread...
+[00:00:09.042,785] <dbg> app: my_entry_point: Spinning in user thread...
+[00:00:09.080,047] <dbg> app: main: Spinning in main thread...
+[00:00:10.080,078] <inf> app: Stackoverflowing...
+[00:00:10.105,285] <dbg> app: stack_overflow: Overflowing, &arr=0x20002760
+[00:00:10.142,700] <dbg> app: stack_overflow: Overflowing, &arr=0x20002728
+[00:00:10.180,084] <dbg> app: stack_overflow: Overflowing, &arr=0x200026f0
+[00:00:10.217,468] <dbg> app: stack_overflow: Overflowing, &arr=0x200026b8
+[00:00:10.254,852] <dbg> app: stack_overflow: Overflowing, &arr=0x20002680
+[00:00:10.292,266] <dbg> app: stack_overflow: Overflowing, &arr=0x20002648
+[00:00:10.329,650] <dbg> app: stack_overflow: Overflowing, &arr=0x20002610
+[00:00:10.367,034] <dbg> app: stack_overflow: Overflowing, &arr=0x200025d8
+[00:00:10.404,418] <dbg> app: stack_overflow: Overflowing, &arr=0x200025a0
+[00:00:10.441,802] <dbg> app: stack_overflow: Overflowing, &arr=0x20002568
+[00:00:10.479,217] <dbg> app: stack_overflow: Overflowing, &arr=0x20002530
+[00:00:10.516,601] <dbg> app: stack_overflow: Overflowing, &arr=0x200024f8
+[00:00:10.553,985] <dbg> app: stack_overflow: Overflowing, &arr=0x200024c0
+[00:00:10.591,400] <err> os: ***** MPU FAULT *****
+[00:00:10.616,943] <err> os:   Stacking error (context area might be not valid)
+[00:00:10.654,998] <err> os: r0/a1:  0x00000078  r1/a2:  0x00009775  r2/a3:  0x00000000
+[00:00:10.698,791] <err> os: r3/a4:  0x000005c5 r12/ip:  0x00000000 r14/lr:  0x0007eed9
+[00:00:10.742,553] <err> os:  xpsr:  0x61000000
+[00:00:10.767,852] <err> os: s[ 0]:  0x00000000  s[ 1]:  0x00000000  s[ 2]:  0x00000000  s[ 3]:  0x00000000
+[00:00:10.818,420] <err> os: s[ 4]:  0x00000000  s[ 5]:  0x00000000  s[ 6]:  0x00000000  s[ 7]:  0x00000000
+[00:00:10.869,018] <err> os: s[ 8]:  0x00000000  s[ 9]:  0x00000000  s[10]:  0x00000000  s[11]:  0x00000000
+[00:00:10.919,586] <err> os: s[12]:  0x00000000  s[13]:  0x00000000  s[14]:  0x00000000  s[15]:  0x00000000
+[00:00:10.970,184] <err> os: fpscr:  0x00000000
+[00:00:10.995,483] <err> os: Faulting instruction address (r15/pc): 0x00003809
+[00:00:11.033,508] <err> os: >>> ZEPHYR FATAL ERROR 2: Stack overflow on CPU 0
+[00:00:11.071,563] <err> os: Current thread: 0x20000000 (user_thread)
+[00:00:11.108,764] <err> app: k_sys_fatal_error_handler invoked.
+[00:00:11.140,563] <inf> app: Thread is normal
+[00:00:11.165,496] <wrn> app: Userspace thread; aborting it.
+[00:00:11.196,960] <inf> app: Starting task, stride=100...
+[00:00:11.228,118] <dbg> app: my_entry_point: Spinning in user thread...
+[00:00:11.265,350] <dbg> app: main: Spinning in main thread...
+[00:00:12.265,380] <dbg> app: my_entry_point: Spinning in user thread...
+[00:00:12.302,642] <dbg> app: main: Spinning in main thread...
+[00:00:13.302,673] <inf> app: Stackoverflowing...
+[00:00:13.327,911] <dbg> app: stack_overflow: Overflowing, &arr=0x20002730
+[00:00:13.365,356] <dbg> app: stack_overflow: Overflowing, &arr=0x200026c8
+[00:00:13.402,770] <dbg> app: stack_overflow: Overflowing, &arr=0x20002660
+[00:00:13.440,185] <dbg> app: stack_overflow: Overflowing, &arr=0x200025f8
+[00:00:13.477,600] <dbg> app: stack_overflow: Overflowing, &arr=0x20002590
+[00:00:13.515,014] <dbg> app: stack_overflow: Overflowing, &arr=0x20002528
+[00:00:13.552,429] <dbg> app: stack_overflow: Overflowing, &arr=0x200024c0
+[00:00:13.589,843] <err> os: r0/a1:  0x00000000  r1/a2:  0x00000002  r2/a3:  0x00000000
+[00:00:13.633,636] <err> os: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x00000002
+[00:00:13.677,429] <err> os:  xpsr:  0x0000c236
+[00:00:13.702,728] <err> os: s[ 0]:  0x00000000  s[ 1]:  0x00000000  s[ 2]:  0x00000000  s[ 3]:  0x00000000
+[00:00:13.753,326] <err> os: s[ 4]:  0x00000000  s[ 5]:  0x00000000  s[ 6]:  0x00000000  s[ 7]:  0x00000000
+[00:00:13.803,955] <err> os: s[ 8]:  0x00000000  s[ 9]:  0x00000000  s[10]:  0x00000000  s[11]:  0x00000000
+[00:00:13.854,553] <err> os: s[12]:  0x00000000  s[13]:  0x00000000  s[14]:  0x00000000  s[15]:  0x00000000
+[00:00:13.905,151] <err> os: fpscr:  0x00000000
+[00:00:13.930,450] <err> os: Faulting instruction address (r15/pc): 0x0000c1df
+[00:00:13.968,475] <err> os: >>> ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+[00:00:14.006,225] <err> os: Fault during interrupt handling
+
+[00:00:14.037,750] <err> os: Current thread: 0x20000000 (user_thread)
+[00:00:14.074,951] <err> app: k_sys_fatal_error_handler invoked.
+[00:00:14.106,719] <inf> app: Thread is normal
+[00:00:14.131,683] <wrn> app: Userspace thread; aborting it.
+[00:00:14.163,116] <err> os: ***** MPU FAULT *****
+[00:00:14.188,659] <err> os:   Stacking error (context area might be not valid)
+[00:00:14.226,715] <err> os:   Floating-point lazy state preservation error
+[00:00:14.264,465] <err> os: r0/a1:  0x00000000  r1/a2:  0x00000002  r2/a3:  0x00000000
+[00:00:14.308,258] <err> os: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x00000002
+[00:00:14.352,050] <err> os:  xpsr:  0x0000c200
+[00:00:14.377,380] <err> os: s[ 0]:  0x00000000  s[ 1]:  0x00000000  s[ 2]:  0x00000000  s[ 3]:  0x00000000
+[00:00:14.427,978] <err> os: s[ 4]:  0x00000000  s[ 5]:  0x00000000  s[ 6]:  0x00000000  s[ 7]:  0x00000000
+[00:00:14.478,607] <err> os: s[ 8]:  0x00000000  s[ 9]:  0x00000000  s[10]:  0x00000000  s[11]:  0x00000000
+[00:00:14.529,235] <err> os: s[12]:  0x00000000  s[13]:  0x00000000  s[14]:  0x00000000  s[15]:  0x00000000
+[00:00:14.579,833] <err> os: fpscr:  0x00000000
+[00:00:14.605,133] <err> os: Faulting instruction address (r15/pc): 0x0000c1df
+[00:00:14.643,157] <err> os: >>> ZEPHYR FATAL ERROR 2: Stack overflow on CPU 0
+[00:00:14.681,213] <err> os: Current thread: 0x20000000 (user_thread)
+[00:00:14.718,444] <err> app: k_sys_fatal_error_handler invoked.
+[00:00:14.750,244] <inf> app: Thread is dead
+[00:00:14.775,024] <wrn> app: Userspace thread; aborting it.
+[00:00:14.806,488] <inf> app: Starting task, stride=120...
+[00:00:14.837,646] <dbg> app: my_entry_point: Spinning in user thread...
+[00:00:14.874,908] <dbg> app: main: Spinning in main thread...
+[00:00:15.874,938] <dbg> app: my_entry_point: Spinning in user thread...
+[00:00:15.912,200] <dbg> app: main: Spinning in main thread...
+[00:00:16.912,231] <inf> app: Stackoverflowing...
+[00:00:16.937,438] <dbg> app: stack_overflow: Overflowing, &arr=0x20002720
+[00:00:16.974,884] <dbg> app: stack_overflow: Overflowing, &arr=0x200026a8
+[00:00:17.012,268] <dbg> app: stack_overflow: Overflowing, &arr=0x20002630
+[00:00:17.049,682] <dbg> app: stack_overflow: Overflowing, &arr=0x200025b8
+[00:00:17.087,066] <dbg> app: stack_overflow: Overflowing, &arr=0x20002540
+[00:00:17.124,450] <dbg> app: stack_overflow: Overflowing, &arr=0x200024c8
+[00:00:17.161,865] <err> os: ***** HARD FAULT *****
+[00:00:17.187,500] <err> os:   Fault escalation (see below)
+[00:00:17.218,811] <err> os: ***** MPU FAULT *****
+[00:00:17.244,384] <err> os:   Stacking error (context area might be not valid)
+[00:00:17.282,440] <err> os:   Floating-point lazy state preservation error
+[00:00:17.320,159] <err> os: r0/a1:  0x200023b0  r1/a2:  0x00000000  r2/a3:  0x2000243c
+[00:00:17.363,983] <err> os: r3/a4:  0x00000000 r12/ip:  0x00009d19 r14/lr:  0xffffffed
+[00:00:17.407,806] <err> os:  xpsr:  0x2100000b
+[00:00:17.433,105] <err> os: s[ 0]:  0x00000000  s[ 1]:  0x00000000  s[ 2]:  0x00000000  s[ 3]:  0x00000000
+[00:00:17.483,734] <err> os: s[ 4]:  0x00000000  s[ 5]:  0x00000000  s[ 6]:  0x00000000  s[ 7]:  0x00000000
+[00:00:17.534,332] <err> os: s[ 8]:  0x00000000  s[ 9]:  0x00000000  s[10]:  0x00000000  s[11]:  0x00000000
+[00:00:17.584,899] <err> os: s[12]:  0x00000000  s[13]:  0x00000000  s[14]:  0x00000000  s[15]:  0x00000000
+[00:00:17.635,498] <err> os: fpscr:  0x00000000
+[00:00:17.660,797] <err> os: Faulting instruction address (r15/pc): 0x00003444
+[00:00:17.698,791] <err> os: >>> ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+[00:00:17.736,724] <err> os: Fault during interrupt handling
+
+[00:00:17.768,218] <err> os: Current thread: 0x20000000 (user_thread)
+[00:00:17.805,450] <err> app: k_sys_fatal_error_handler invoked.
+[00:00:17.837,219] <inf> app: Thread is normal
+[00:00:17.862,152] <wrn> app: Userspace thread; aborting it.
+[00:00:17.893,585] <err> os: ***** HARD FAULT *****
+[00:00:17.919,219] <err> os:   Fault escalation (see below)
+[00:00:17.950,531] <err> os: ***** BUS FAULT *****
+[00:00:17.976,074] <err> os:   Precise data bus error
+[00:00:18.006,866] <err> os:   BFAR Address: 0xfffffffe
+[00:00:18.037,872] <err> os: r0/a1:  0x200023b0  r1/a2:  0x00000000  r2/a3:  0x2000243c
+[00:00:18.081,695] <err> os: r3/a4:  0x00000000 r12/ip:  0x00009d19 r14/lr:  0xffffffed
+[00:00:18.125,488] <err> os:  xpsr:  0x2100000b
+[00:00:18.150,787] <err> os: s[ 0]:  0x00000000  s[ 1]:  0x00000000  s[ 2]:  0x00000000  s[ 3]:  0x00000000
+[00:00:18.201,385] <err> os: s[ 4]:  0x00000000  s[ 5]:  0x00000000  s[ 6]:  0x00000000  s[ 7]:  0x00000000
+[00:00:18.251,953] <err> os: s[ 8]:  0x00000000  s[ 9]:  0x00000000  s[10]:  0x00000000  s[11]:  0x00000000
+[00:00:18.302,551] <err> os: s[12]:  0x00000000  s[13]:  0x00000000  s[14]:  0x00000000  s[15]:  0x00000000
+[00:00:18.353,149] <err> os: fpscr:  0x00000000
+[00:00:18.378,417] <err> os: Faulting instruction address (r15/pc): 0x00003444
+[00:00:18.416,442] <err> os: >>> ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+[00:00:18.454,345] <err> os: Fault during interrupt handling
+
+[00:00:18.485,870] <err> os: Current thread: 0x20000000 (user_thread)
+[00:00:18.523,071] <err> app: k_sys_fatal_error_handler invoked.
+[00:00:18.554,840] <inf> app: Thread is dead
+[00:00:18.579,589] <wrn> app: Userspace thread; aborting it.
+[00:00:18.611,022] <err> os: ***** HARD FAULT *****
+[00:00:18.636,657] <err> os:   Fault escalation (see below)
+[00:00:18.667,968] <err> os: ***** BUS FAULT *****
+[00:00:18.693,511] <err> os:   Precise data bus error
+[00:00:18.724,304] <err> os:   BFAR Address: 0xfffffffe
+[00:00:18.755,310] <err> os: r0/a1:  0x200023b0  r1/a2:  0x00000000  r2/a3:  0x2000243c
+[00:00:18.799,133] <err> os: r3/a4:  0x00000000 r12/ip:  0x00009d19 r14/lr:  0xffffffed
+[00:00:18.842,926] <err> os:  xpsr:  0x2100000b
+[00:00:18.868,255] <err> os: s[ 0]:  0x00000000  s[ 1]:  0x00000000  s[ 2]:  0x00000000  s[ 3]:  0x00000000
+[00:00:18.918,853] <err> os: s[ 4]:  0x00000000  s[ 5]:  0x00000000  s[ 6]:  0x00000000  s[ 7]:  0x00000000
+[00:00:18.969,482] <err> os: s[ 8]:  0x00000000  s[ 9]:  0x00000000  s[10]:  0x00000000  s[11]:  0x00000000
+[00:00:19.020,111] <err> os: s[12]:  0x00000000  s[13]:  0x00000000  s[14]:  0x00000000  s[15]:  0x00000000
+[00:00:19.070,739] <err> os: fpscr:  0x00000000
+[00:00:19.096,038] <err> os: Faulting instruction address (r15/pc): 0x00003444
+[00:00:19.134,063] <err> os: >>> ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+[00:00:19.171,997] <err> os: Fault during interrupt handling
+
+[00:00:19.203,521] <err> os: Current thread: 0x20000000 (user_thread)
+[00:00:19.240,722] <err> app: k_sys_fatal_error_handler invoked.
+[00:00:19.272,521] <inf> app: Thread is dead
+[00:00:19.297,302] <wrn> app: Userspace thread; aborting it.
+[00:00:19.328,704] <err> os: ***** HARD FAULT *****
+[00:00:19.354,339] <err> os:   Fault escalation (see below)
+[00:00:19.385,681] <err> os: ***** BUS FAULT *****
+[00:00:19.411,224] <err> os:   Precise data bus error
+[00:00:19.442,016] <err> os:   BFAR Address: 0xfffffffe
+[00:00:19.473,052] <err> os: r0/a1:  0x200023b0  r1/a2:  0x00000000  r2/a3:  0x2000243c
+[00:00:19.516,845] <err> os: r3/a4:  0x00000000 r12/ip:  0x00009d19 r14/lr:  0xffffffed
+[00:00:19.560,668] <err> os:  xpsr:  0x2100000b
+[00:00:19.585,968] <err> os: s[ 0]:  0x00000000  s[ 1]:  0x00000000  s[ 2]:  0x00000000  s[ 3]:  0x00000000
+[00:00:19.636,566] <err> os: s[ 4]:  0x00000000  s[ 5]:  0x00000000  s[ 6]:  0x00000000  s[ 7]:  0x00000000
+[00:00:19.687,133] <err> os: s[ 8]:  0x00000000  s[ 9]:  0x00000000  s[10]:  0x00000000  s[11]:  0x00000000
+[00:00:19.737,731] <err> os: s[12]:  0x00000000  s[13]:  0x00000000  s[14]:  0x00000000  s[15]:  0x00000000
+[00:00:19.788,330] <err> os: fpscr:  0x00000000
+[00:00:19.813,629] <err> os: Faulting instruction address (r15/pc): 0x00003444
+[00:00:19.851,623] <err> os: >>> ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+[00:00:19.889,556] <err> os: Fault during interrupt handling
+
+[00:00:19.921,051] <err> os: Current thread: 0x20000000 (user_thread)
+[00:00:19.958,282] <err> app: k_sys_fatal_error_handler invoked.
+[00:00:19.990,051] <inf> app: Thread is dead
+[00:00:20.014,831] <wrn> app: Userspace thread; aborting it.
+
+<repeats infinitely>

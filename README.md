@@ -1,6 +1,8 @@
 
 # Reproduction for Zephyr livelock bug
 
+See https://github.com/zephyrproject-rtos/zephyr/issues/42496 .
+
 ## TO BUILD
 
 ```bash

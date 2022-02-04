@@ -15,3 +15,9 @@ Observe output over SEGGER RTT log:
 JLinkGDBServerCLExe -select USB -device nRF52840_xxAA -if SWD -endian little -speed 4000 -nohalt &
 JLinkRTTClient
 ```
+
+## Configuration
+
+Uncomment `#define ENABLE_MITIGATION` to detect and halt on livelock condition.
+
+Uncomment `#define MODE_JOIN` to cause the main thread to join on the user thread instead of polling; changes exact livelock behaviour.

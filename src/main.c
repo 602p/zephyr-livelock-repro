@@ -48,21 +48,21 @@ void k_sys_fatal_error_handler(unsigned int reason, const z_arch_esf_t *esf) {
 	}
 }
 
-void stack_overflow(int x) {
-	char arr[x];
+void stack_overflow(int stride) {
+	char arr[stride];
 	LOG_DBG("Overflowing, &arr=%p", &arr);
-	stack_overflow(x);
+	stack_overflow(stride);
 }
 
 void my_entry_point(void* p1, void* unused2, void* unused3) {
 	k_thread_name_set(NULL, "user_thread");
 
-	int x = 1;
+	int time = 1;
 	while(1) {
-		x = x + 1;
+		time = time + 1;
 		LOG_DBG("Spinning in user thread...");
 		k_msleep(1000);
-		if (x > 2) {
+		if (time > 2) {
 			LOG_INF("Stackoverflowing...");
 			stack_overflow((int)p1);
 		}
@@ -72,6 +72,7 @@ void my_entry_point(void* p1, void* unused2, void* unused3) {
 struct k_thread user_task_thread;
 
 void main() {
+	// Strides to try overflowing by.
 	char to_try[] = {
 		     // MODE_JOIN		!MODE_JOIN
 		1,   // Works			Works
@@ -82,20 +83,21 @@ void main() {
 	};
 
 	for (int i = 0; i < sizeof(to_try); i++) {
-		int x = to_try[i];
-		LOG_INF("Starting task, x=%i...", x);
+		int stride = to_try[i];
+		LOG_INF("Starting task, stride=%i...", stride);
 
 		k_thread_create(
 			&user_task_thread,
 			user_task_stack,
 			K_THREAD_STACK_SIZEOF(user_task_stack),
 			my_entry_point,
-			(void*)x, NULL, NULL,
+			(void*)stride, NULL, NULL,
 			-1,
 			K_USER,
 			K_NO_WAIT
 		);
 
+		// Wait for user task to terminate
 #ifdef MODE_JOIN
 		k_thread_join(&user_task_thread, K_FOREVER);
 #else
